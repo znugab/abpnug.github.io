@@ -47,16 +47,47 @@
   }
   .header {
     position: relative;
-    background-image: url("/portfolio/img/home1.jpg");
+    width: 180%;
     
-    background-size: 80%;
+    background-size: 90%;
     background-position: left;
     
     
   }
+  header {
+    height: 100px;
+    background-color: #fff;
+    background-size: cover;
+}
   .navbar {
-    background-color: #ffffff;
-    height: 80px;
+    border-radius: 0;
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+    background-color: transparent;
+
+  }
+
+  
+  .affix {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+  
+  /* fixed to top styles */
+  .affix.navbar {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 12px 8px -4px rgba(245,242,245,0.7);
+    -moz-box-shadow: 0px 12px 8px -4px rgba(245,242,245,0.7);
+    box-shadow: 0px 12px 8px -4px rgba(245,242,245,0.7);
+  }
+  .affix.navbar .nav-item>a, 
+  .affix.navbar .navbar-brand {
+    color: #fff;
   }
   .nav-link {
     font-family: 'Baloo Chettan 2';
@@ -72,6 +103,10 @@
   .nav-link:hover {
     color: #000 !important;
     
+  }
+  footer {
+    background-color: #130f40;
+    height: 400px;
   }
   .navbar-brand {
     font-family: 'Open Sans';
@@ -109,7 +144,7 @@
     border-left: 4pxsolid black;
   }
   .about .desc h3{
-    color: #10828c;
+    color: #7ed6df;
   }
   .about .desc p{
     line-height: 2;
